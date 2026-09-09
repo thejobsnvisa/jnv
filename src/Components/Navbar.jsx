@@ -9,7 +9,6 @@ const Navbar = () => {
   const menuItems = [
     { name: "Home", href: "/" },
     { name: "Services", href: "#services" },
-    { name: "Recruiters", href: "/recruiters" },
     { name: "Healthcare", href: "/healthcare" },
     { name: "Blogs", href: "/blogs" },
   ];
