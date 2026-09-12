@@ -1407,7 +1407,7 @@ const Healthcare = () => {
                     xl:w-[210px] xl:gap-3 xl:px-8
                   "
                     >
-                      <FaRegCheckCircle className="w-5 h-5 xl:w-6 xl:h-6 text-green-900 ml-[-30px] group-hover:text-white flex-shrink-0" />
+                      <FaRegCheckCircle className="w-5 h-5 xl:w-6 xl:h-6 text-green-900 ml-[-10px] group-hover:text-white flex-shrink-0" />
                       <span className="text-[14px] xl:text-[16px] group-hover:text-white text-green-900 font-bold truncate xl:w-[180px]">
                         {job.highlights[1]}
                       </span>
