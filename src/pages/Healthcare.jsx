@@ -266,7 +266,8 @@ const Healthcare = () => {
       highlights: [
         "View Role Details",
         "Check Eligibility",
-        "Apply or Enquire",
+        "Employee",
+        "Employer",
       ],
       applyUrl: "https://recruitcrm.io/apply/17663858655000124369xpA",
       contactEmail: "info@jobsnvisa.com.au",
@@ -301,7 +302,8 @@ const Healthcare = () => {
       highlights: [
         "View Role Details",
         "Check Eligibility",
-        "Apply or Enquire",
+        "Employee",
+        "Employer",
       ],
       applyUrl: "https://recruitcrm.io/apply/17661356115550124369JXN",
       contactEmail: "info@jobsnvisa.com.au",
@@ -331,7 +333,8 @@ const Healthcare = () => {
       highlights: [
         "View Role Details",
         "Check Eligibility",
-        "Apply or Enquire",
+        "Employee",
+        "Employer",
       ],
       applyUrl: "https://recruitcrm.io/apply/17852180728210124369mcy",
       contactEmail: "info@jobsnvisa.com.au",
@@ -361,7 +364,8 @@ const Healthcare = () => {
       highlights: [
         "View Role Details",
         "Check Eligibility",
-        "Apply or Enquire",
+        "Employee",
+        "Employer",
       ],
       applyUrl: "https://recruitcrm.io/apply/17852183728500124369hbC",
       contactEmail: "info@jobsnvisa.com.au",
@@ -396,7 +400,8 @@ const Healthcare = () => {
       highlights: [
         "View Role Details",
         "Check Eligibility",
-        "Apply or Enquire",
+        "Employee",
+        "Employer",
       ],
       applyUrl: "https://recruitcrm.io/apply/17847149796730124369xPW",
       contactEmail: "info@jobsnvisa.com.au",
@@ -431,7 +436,8 @@ const Healthcare = () => {
       highlights: [
         "View Role Details",
         "Check Eligibility",
-        "Apply or Enquire",
+        "Employee",
+        "Employer",
       ],
       applyUrl: "https://recruitcrm.io/apply/17852186501750124369TUO",
       contactEmail: "info@jobsnvisa.com.au",
@@ -466,7 +472,8 @@ const Healthcare = () => {
       highlights: [
         "View Role Details",
         "Check Eligibility",
-        "Apply or Enquire",
+        "Employee",
+        "Employer",
       ],
       applyUrl: "https://recruitcrm.io/apply/17646829951890124369zbW",
       contactEmail: "info@jobsnvisa.com.au",
@@ -1466,6 +1473,7 @@ const Healthcare = () => {
                       flex
                       flex-col
                       sm:flex-row
+                      sm:flex-wrap
                       justify-center
                       xl:justify-between
                       gap-4
@@ -1595,7 +1603,7 @@ const Healthcare = () => {
                       </span>
                     </button>
 
-                    {/* Highlight 3 - Apply or Enquire */}
+                    {/* Highlight 3 - Employee */}
                     <button
                       type="button"
                       onClick={() => openModal("jobseeker")}
@@ -1625,7 +1633,7 @@ const Healthcare = () => {
                     >
                       <img
                         src={a1}
-                        alt="Apply"
+                        alt="Employee"
                         className="w-4 h-4 flex-shrink-0"
                       />
 
@@ -1642,12 +1650,10 @@ const Healthcare = () => {
                         {job.highlights[2]}
                       </span>
                     </button>
-  {/* Highlight 2 - Check Eligibility */}
+                      {/* Highlight 4 - Employer */}
                     <button
                       type="button"
-                      onClick={() => 
-                        openModal("post-job")
-                        }                      }
+                      onClick={() => openModal("post-job")}
                       className="
                         w-full
                         sm:w-1/3
@@ -1672,16 +1678,10 @@ const Healthcare = () => {
                         xl:px-8
                       "
                     >
-                      <FaRegCheckCircle
-                        className="
-                          w-5
-                          h-5
-                          xl:w-6
-                          xl:h-6
-                          text-green-900
-                          group-hover:text-white
-                          flex-shrink-0
-                        "
+                      <img
+                        src={a1}
+                        alt="Employer"
+                        className="w-4 h-4 flex-shrink-0"
                       />
 
                       <span
