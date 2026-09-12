@@ -1642,9 +1642,65 @@ const Healthcare = () => {
                         {job.highlights[2]}
                       </span>
                     </button>
+  {/* Highlight 2 - Check Eligibility */}
+                    <button
+                      type="button"
+                      onClick={() => 
+                        openModal("post-job")
+                        }                      }
+                      className="
+                        w-full
+                        sm:w-1/3
+                        h-[44px]
+                        rounded-tl-[12px]
+                        rounded-tr-[12px]
+                        rounded-bl-[12px]
+                        bg-green-100
+                        hover:bg-green-700
+                        px-4
+                        py-3
+                        flex
+                        items-center
+                        justify-center
+                        gap-2
+                        cursor-pointer
+                        group
+                        transition-colors
+                        duration-200
+                        xl:w-[210px]
+                        xl:gap-3
+                        xl:px-8
+                      "
+                    >
+                      <FaRegCheckCircle
+                        className="
+                          w-5
+                          h-5
+                          xl:w-6
+                          xl:h-6
+                          text-green-900
+                          group-hover:text-white
+                          flex-shrink-0
+                        "
+                      />
+
+                      <span
+                        className="
+                          text-[14px]
+                          xl:text-[16px]
+                          text-green-900
+                          group-hover:text-white
+                          font-bold
+                          truncate
+                        "
+                      >
+                        {job.highlights[3]}
+                      </span>
+                    </button>
+
+
                   </div>
                 </div>
-              </div>
             ))}
           </div>
         </div>
