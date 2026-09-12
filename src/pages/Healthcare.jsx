@@ -1681,7 +1681,7 @@ const Healthcare = () => {
                       <img
                         src={a1}
                         alt="Employer"
-                        className="w-4 h-4 flex-shrink-0"
+                        className="w-4 h-4 text-green-900 flex-shrink-0"
                       />
 
                       <span
