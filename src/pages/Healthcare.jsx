@@ -1364,13 +1364,13 @@ const Healthcare = () => {
                     ))}
                   </div>
 
-                {/* Highlights Section */}
+               {/* Highlights Section */}
 <div
   className="
     w-full
     flex flex-col sm:flex-row
     justify-center xl:justify-between
-    gap-4 sm:gap-4
+    gap-4
     mt-6 xl:mt-0
     xl:w-[750px]
     xl:mt-[25px]
@@ -1378,21 +1378,29 @@ const Healthcare = () => {
     xl:gap-3
   "
 >
-  {/* Highlight 1 */}
+  {/* Highlight 1 - View Role Details */}
   <div
     onClick={() =>
       alert(
-        `${job.title}\n\nRole Details:\n${job.description}\n\nCategory: ${job.category}\nLocation: ${job.location}\nExperience: ${job.experience}`,
+        `${job.title}\n\nRole Details:\n${job.description}\n\nCategory: ${job.category}\nLocation: ${job.location}\nExperience: ${job.experience}`
       )
     }
     className="
-      w-full mt-4 sm:w-1/3
+      w-full
+      sm:w-1/3
       h-[44px]
-      rounded-tl-[12px] rounded-tr-[12px] rounded-bl-[12px]
-      bg-green-700 hover:bg-green-100
-      px-4 py-3
-      flex items-center justify-center
-      gap-1
+      mt-4
+      rounded-tl-[12px]
+      rounded-tr-[12px]
+      rounded-bl-[12px]
+      bg-green-700
+      hover:bg-green-100
+      px-4
+      py-3
+      flex
+      items-center
+      justify-center
+      gap-2
       cursor-pointer
       group
       xl:w-[210px]
@@ -1404,33 +1412,51 @@ const Healthcare = () => {
       className="
         w-6 h-6
         xl:w-10 xl:h-6
-        ml-[-30px]
         text-white
         group-hover:text-green-900
         flex-shrink-0
       "
     />
 
-    <p className="text-[14px] xl:text-[16px] text-white group-hover:text-green-900 font-bold truncate xl:w-[180px]">
+    <p
+      className="
+        text-[14px]
+        xl:text-[16px]
+        text-white
+        group-hover:text-green-900
+        font-bold
+        truncate
+      "
+    >
       {job.highlights[0]}
     </p>
   </div>
 
-  {/* Highlight 2 */}
+  {/* Highlight 2 - Check Eligibility */}
   <div
     onClick={() =>
       alert(
-        `Eligibility Check for ${job.title}\n\nRequired Qualifications:\n${job.qualifications.join("\n")}\n\nRequired Skills:\n${job.skills.join("\n")}`,
+        `Eligibility Check for ${job.title}\n\nRequired Qualifications:\n${job.qualifications.join(
+          "\n"
+        )}\n\nRequired Skills:\n${job.skills.join("\n")}`
       )
     }
     className="
-      w-full mt-4 sm:w-1/3
+      w-full
+      sm:w-1/3
       h-[44px]
-      rounded-tl-[12px] rounded-tr-[12px] rounded-bl-[12px]
-      bg-green-100 hover:bg-green-700
-      px-4 py-3
-      flex items-center justify-center
-      gap-1
+      mt-4
+      rounded-tl-[12px]
+      rounded-tr-[12px]
+      rounded-bl-[12px]
+      bg-green-100
+      hover:bg-green-700
+      px-4
+      py-3
+      flex
+      items-center
+      justify-center
+      gap-2
       cursor-pointer
       group
       xl:w-[210px]
@@ -1448,21 +1474,38 @@ const Healthcare = () => {
       "
     />
 
-    <span className="text-[14px] xl:text-[16px] group-hover:text-white text-green-900 font-bold truncate xl:w-[180px]">
+    <span
+      className="
+        text-[14px]
+        xl:text-[16px]
+        text-green-900
+        group-hover:text-white
+        font-bold
+        truncate
+      "
+    >
       {job.highlights[1]}
     </span>
   </div>
 
-  {/* Highlight 3 */}
+  {/* Highlight 3 - Apply or Enquire */}
   <div
     className="
-      w-full mt-4 sm:w-1/3
+      w-full
+      sm:w-1/3
       h-[44px]
-      rounded-tl-[12px] rounded-tr-[12px] rounded-bl-[12px]
-      bg-green-700 hover:bg-green-100
-      px-4 py-3
-      flex items-center justify-center
-      gap-1
+      mt-4
+      rounded-tl-[12px]
+      rounded-tr-[12px]
+      rounded-bl-[12px]
+      bg-green-700
+      hover:bg-green-100
+      px-4
+      py-3
+      flex
+      items-center
+      justify-center
+      gap-2
       cursor-pointer
       group
       xl:w-[210px]
@@ -1473,56 +1516,35 @@ const Healthcare = () => {
     <button
       type="button"
       onClick={() => openModal("jobseeker")}
-      className="w-full h-full flex items-center justify-center gap-2"
+      className="
+        w-full
+        h-full
+        flex
+        items-center
+        justify-center
+        gap-2
+      "
     >
       <img
         src={a1}
-        alt=""
+        alt="Apply"
         className="w-4 h-4 flex-shrink-0"
       />
 
-      <span className="text-[14px] xl:text-[16px] text-white group-hover:text-green-900 font-bold truncate">
-        Employee
+      <span
+        className="
+          text-[14px]
+          xl:text-[16px]
+          text-white
+          group-hover:text-green-900
+          font-bold
+          truncate
+        "
+      >
+        {job.highlights[2]}
       </span>
     </button>
   </div>
-
-  {/* Highlight 4 */}
-  <div
-    className="
-      w-full mt-4 sm:w-1/3
-      h-[44px]
-      rounded-tl-[12px] rounded-tr-[12px] rounded-bl-[12px]
-      bg-green-100 hover:bg-green-700
-      px-4 py-3
-      flex items-center justify-center
-      gap-1
-      cursor-pointer
-      group
-      xl:w-[210px]
-      xl:gap-3
-      xl:px-6
-    "
-  >
-    <button
-      type="button"
-      onClick={() => openModal("post-job")}
-      className="w-full h-full flex items-center justify-center gap-2"
-    >
-      <img
-        src={a1}
-        alt=""
-        className="w-4 h-4 flex-shrink-0"
-      />
-
-      <span className="text-[14px] xl:text-[16px] text-green-900 group-hover:text-white font-bold truncate">
-        Employer
-      </span>
-    </button>
-  </div>
-</div>
-                </div>
-            ))}
           </div>
         </div>
       </section>
