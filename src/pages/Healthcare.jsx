@@ -1364,97 +1364,163 @@ const Healthcare = () => {
                     ))}
                   </div>
 
-                  {/* Highlights Section */}
-                  <div
-                    className="
-                  /* Mobile / Tablet Styles */
-                  w-full flex flex-col sm:flex-row justify-center xl:justify-between gap-4 sm:gap-4 mt-6 xl:mt-0
-                  /* Desktop Styles (Unchanged) */
-                  xl:w-[750px] xl:mt-[25px] xl:ml-[28px] xl:gap-3
-                "
-                  >
-                    {/* Highlight 1 */}
-                    <div
-                      onClick={() =>
-                        alert(
-                          `${job.title}\n\nRole Details:\n${job.description}\n\nCategory: ${job.category}\nLocation: ${job.location}\nExperience: ${job.experience}`,
-                        )
-                      }
-                      className="
-                    /* Mobile / Tablet Styles */
-                    w-full mt-4 sm:w-1/3 h-[44px] rounded-tl-[12px] rounded-tr-[12px] rounded-bl-[12px] bg-green-700 hover:bg-green-100 px-4 py-3 flex items-center justify-center gap-1 cursor-pointer group
-                    /* Desktop Styles (Unchanged) */
-                    xl:w-[210px] xl:px-8 xl:gap-1
-                  "
-                    >
-                      <RiUserSettingsLine className="w-6 h-6 xl:w-10 xl:h-6 ml-[-30px] text-white group-hover:text-green-900 flex-shrink-0" />
-                      <p className="text-[14px] xl:text-[16px] text-white group-hover:text-green-900 font-bold truncate xl:w-[180px]">
-                        {job.highlights[0]}
-                      </p>
-                    </div>
+                {/* Highlights Section */}
+<div
+  className="
+    w-full
+    flex flex-col sm:flex-row
+    justify-center xl:justify-between
+    gap-4 sm:gap-4
+    mt-6 xl:mt-0
+    xl:w-[750px]
+    xl:mt-[25px]
+    xl:ml-[28px]
+    xl:gap-3
+  "
+>
+  {/* Highlight 1 */}
+  <div
+    onClick={() =>
+      alert(
+        `${job.title}\n\nRole Details:\n${job.description}\n\nCategory: ${job.category}\nLocation: ${job.location}\nExperience: ${job.experience}`,
+      )
+    }
+    className="
+      w-full mt-4 sm:w-1/3
+      h-[44px]
+      rounded-tl-[12px] rounded-tr-[12px] rounded-bl-[12px]
+      bg-green-700 hover:bg-green-100
+      px-4 py-3
+      flex items-center justify-center
+      gap-1
+      cursor-pointer
+      group
+      xl:w-[210px]
+      xl:px-8
+      xl:gap-1
+    "
+  >
+    <RiUserSettingsLine
+      className="
+        w-6 h-6
+        xl:w-10 xl:h-6
+        ml-[-30px]
+        text-white
+        group-hover:text-green-900
+        flex-shrink-0
+      "
+    />
 
-                    {/* Highlight 2 */}
-                    <div
-                      onClick={() =>
-                        alert(
-                          `Eligibility Check for ${job.title}\n\nRequired Qualifications:\n${job.qualifications.join("\n")}\n\nRequired Skills:\n${job.skills.join("\n")}`,
-                        )
-                      }
-                      className="
-                    /* Mobile / Tablet Styles */
-                    w-full mt-4 sm:w-1/3 h-[44px] rounded-tl-[12px] rounded-tr-[12px] rounded-bl-[12px] bg-green-100 hover:bg-green-700 px-4 py-3 flex items-center justify-center gap-1 cursor-pointer group
-                    /* Desktop Styles (Unchanged) */
-                    xl:w-[210px] xl:gap-3 xl:px-8
-                  "
-                    >
-                      <FaRegCheckCircle className="w-5 h-5 xl:w-6 xl:h-6 text-green-900 ml-[-10px] group-hover:text-white flex-shrink-0" />
-                      <span className="text-[14px] xl:text-[16px] group-hover:text-white text-green-900 font-bold truncate xl:w-[180px]">
-                        {job.highlights[1]}
-                      </span>
-                    </div>
+    <p className="text-[14px] xl:text-[16px] text-white group-hover:text-green-900 font-bold truncate xl:w-[180px]">
+      {job.highlights[0]}
+    </p>
+  </div>
 
-                    {/* Highlight 3 */}
-                    <div
-                      className="
-                    /* Mobile / Tablet Styles */
-                    w-full  mt-4 sm:w-1/3 h-[44px] rounded-tl-[12px] rounded-tr-[12px] rounded-bl-[12px] bg-green-100  px-4 py-3 flex items-center justify-center gap-1 cursor-pointer group
-                    /* Desktop Styles (Unchanged) */
-                    xl:w-[210px] xl:gap-3 xl:px-6
-                  "
-                    >                        <button
-                          type="button"
-                          onClick={() => openModal("jobseeker")}
-                          className="inline-flex items-center justify-center gap-1 rounded-md bg-green-700 px-2 py-1 text-[11px] font-bold text-white focus:outline-none"
-                        >
-                          <img
-                            src={a1}
-                            alt=""
-                            className="w-4 h-4 flex-shrink-0"
-                          />
-                          <span>Employee</span>
-                        </button>
-                      </div>
-                      <div
-                      className="
-                    /* Mobile / Tablet Styles */
-                    w-full  mt-4 sm:w-1/3 h-[44px] rounded-tl-[12px] rounded-tr-[12px] rounded-bl-[12px] bg-green-100  px-4 py-3 flex items-center justify-center gap-1 cursor-pointer group
-                    /* Desktop Styles (Unchanged) */
-                    xl:w-[210px] xl:gap-3 xl:px-6
-                  "
-                    >                        <button
-                          type="button"
-                          onClick={() => openModal("post-job")}
-                        >
-                          <img
-                            src={a1}
-                            alt=""
-                            className="w-4 h-4 flex-shrink-0"
-                          />
-                          <span>Employee</span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+  {/* Highlight 2 */}
+  <div
+    onClick={() =>
+      alert(
+        `Eligibility Check for ${job.title}\n\nRequired Qualifications:\n${job.qualifications.join("\n")}\n\nRequired Skills:\n${job.skills.join("\n")}`,
+      )
+    }
+    className="
+      w-full mt-4 sm:w-1/3
+      h-[44px]
+      rounded-tl-[12px] rounded-tr-[12px] rounded-bl-[12px]
+      bg-green-100 hover:bg-green-700
+      px-4 py-3
+      flex items-center justify-center
+      gap-1
+      cursor-pointer
+      group
+      xl:w-[210px]
+      xl:gap-3
+      xl:px-8
+    "
+  >
+    <FaRegCheckCircle
+      className="
+        w-5 h-5
+        xl:w-6 xl:h-6
+        text-green-900
+        group-hover:text-white
+        flex-shrink-0
+      "
+    />
+
+    <span className="text-[14px] xl:text-[16px] group-hover:text-white text-green-900 font-bold truncate xl:w-[180px]">
+      {job.highlights[1]}
+    </span>
+  </div>
+
+  {/* Highlight 3 */}
+  <div
+    className="
+      w-full mt-4 sm:w-1/3
+      h-[44px]
+      rounded-tl-[12px] rounded-tr-[12px] rounded-bl-[12px]
+      bg-green-700 hover:bg-green-100
+      px-4 py-3
+      flex items-center justify-center
+      gap-1
+      cursor-pointer
+      group
+      xl:w-[210px]
+      xl:gap-3
+      xl:px-6
+    "
+  >
+    <button
+      type="button"
+      onClick={() => openModal("jobseeker")}
+      className="w-full h-full flex items-center justify-center gap-2"
+    >
+      <img
+        src={a1}
+        alt=""
+        className="w-4 h-4 flex-shrink-0"
+      />
+
+      <span className="text-[14px] xl:text-[16px] text-white group-hover:text-green-900 font-bold truncate">
+        Employee
+      </span>
+    </button>
+  </div>
+
+  {/* Highlight 4 */}
+  <div
+    className="
+      w-full mt-4 sm:w-1/3
+      h-[44px]
+      rounded-tl-[12px] rounded-tr-[12px] rounded-bl-[12px]
+      bg-green-100 hover:bg-green-700
+      px-4 py-3
+      flex items-center justify-center
+      gap-1
+      cursor-pointer
+      group
+      xl:w-[210px]
+      xl:gap-3
+      xl:px-6
+    "
+  >
+    <button
+      type="button"
+      onClick={() => openModal("post-job")}
+      className="w-full h-full flex items-center justify-center gap-2"
+    >
+      <img
+        src={a1}
+        alt=""
+        className="w-4 h-4 flex-shrink-0"
+      />
+
+      <span className="text-[14px] xl:text-[16px] text-green-900 group-hover:text-white font-bold truncate">
+        Employer
+      </span>
+    </button>
+  </div>
+</div>
                 </div>
             ))}
           </div>
