@@ -1443,8 +1443,7 @@ const Healthcare = () => {
                   "
                     >                        <button
                           type="button"
-                          onClick={() => openModal("jobseeker")}
-                          className="inline-flex items-center justify-center gap-1 rounded-md bg-green-700 px-2 py-1 text-[11px] font-bold text-white focus:outline-none"
+                          onClick={() => openModal("post-job")}
                         >
                           <img
                             src={a1}
