@@ -1384,10 +1384,10 @@ const Healthcare = () => {
                     /* Mobile / Tablet Styles */
                     w-full mt-4 sm:w-1/3 h-[44px] rounded-tl-[12px] rounded-tr-[12px] rounded-bl-[12px] bg-green-700 hover:bg-green-100 px-4 py-3 flex items-center justify-center gap-1 cursor-pointer group
                     /* Desktop Styles (Unchanged) */
-                    xl:w-[250px] xl:px-8 xl:gap-1
+                    xl:w-[210px] xl:px-8 xl:gap-1
                   "
                     >
-                      <RiUserSettingsLine className="w-6 h-6 xl:w-10 xl:h-6 text-white group-hover:text-green-900 flex-shrink-0" />
+                      <RiUserSettingsLine className="w-6 h-6 xl:w-10 xl:h-6 ml-[-30px] text-white group-hover:text-green-900 flex-shrink-0" />
                       <p className="text-[14px] xl:text-[16px] text-white group-hover:text-green-900 font-bold truncate xl:w-[180px]">
                         {job.highlights[0]}
                       </p>
@@ -1404,10 +1404,10 @@ const Healthcare = () => {
                     /* Mobile / Tablet Styles */
                     w-full mt-4 sm:w-1/3 h-[44px] rounded-tl-[12px] rounded-tr-[12px] rounded-bl-[12px] bg-green-100 hover:bg-green-700 px-4 py-3 flex items-center justify-center gap-1 cursor-pointer group
                     /* Desktop Styles (Unchanged) */
-                    xl:w-[250px] xl:gap-3 xl:px-8
+                    xl:w-[210px] xl:gap-3 xl:px-8
                   "
                     >
-                      <FaRegCheckCircle className="w-5 h-5 xl:w-6 xl:h-6 text-green-900 group-hover:text-white flex-shrink-0" />
+                      <FaRegCheckCircle className="w-5 h-5 xl:w-6 xl:h-6 text-green-900 ml-[-30px] group-hover:text-white flex-shrink-0" />
                       <span className="text-[14px] xl:text-[16px] group-hover:text-white text-green-900 font-bold truncate xl:w-[180px]">
                         {job.highlights[1]}
                       </span>
@@ -1419,11 +1419,9 @@ const Healthcare = () => {
                     /* Mobile / Tablet Styles */
                     w-full  mt-4 sm:w-1/3 h-[44px] rounded-tl-[12px] rounded-tr-[12px] rounded-bl-[12px] bg-green-100  px-4 py-3 flex items-center justify-center gap-1 cursor-pointer group
                     /* Desktop Styles (Unchanged) */
-                    xl:w-[250px] xl:gap-3 xl:px-6
+                    xl:w-[210px] xl:gap-3 xl:px-6
                   "
-                    >
-                      <div className="flex items-center gap-2 w-full justify-center">
-                        <button
+                    >                        <button
                           type="button"
                           onClick={() => openModal("jobseeker")}
                           className="inline-flex items-center justify-center gap-1 rounded-md bg-green-700 px-2 py-1 text-[11px] font-bold text-white focus:outline-none"
@@ -1435,12 +1433,25 @@ const Healthcare = () => {
                           />
                           <span>Employee</span>
                         </button>
-                                               <button
+                      </div>
+                      <div
+                      className="
+                    /* Mobile / Tablet Styles */
+                    w-full  mt-4 sm:w-1/3 h-[44px] rounded-tl-[12px] rounded-tr-[12px] rounded-bl-[12px] bg-green-100  px-4 py-3 flex items-center justify-center gap-1 cursor-pointer group
+                    /* Desktop Styles (Unchanged) */
+                    xl:w-[210px] xl:gap-3 xl:px-6
+                  "
+                    >                        <button
                           type="button"
-                          onClick={() => openModal("recruiter")}
+                          onClick={() => openModal("jobseeker")}
                           className="inline-flex items-center justify-center gap-1 rounded-md bg-green-700 px-2 py-1 text-[11px] font-bold text-white focus:outline-none"
                         >
-                          <span>Employer</span>
+                          <img
+                            src={a1}
+                            alt=""
+                            className="w-4 h-4 flex-shrink-0"
+                          />
+                          <span>Employee</span>
                         </button>
                       </div>
                     </div>
