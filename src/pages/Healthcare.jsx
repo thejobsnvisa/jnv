@@ -1457,7 +1457,6 @@ const Healthcare = () => {
                     </div>
                   </div>
                 </div>
-              </div>
             ))}
           </div>
         </div>
