@@ -1467,7 +1467,7 @@ const Healthcare = () => {
                   </div>
 
                   {/* Highlights Section */}
-                 <div className="w-full mt-6 xl:mt-0 xl:mt-[25px] xl:ml-[28px]">
+                 <div className="w-full mt-6 xl:mt-0 xl:mt-[25px] xl:ml-[30px]">
   <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 w-full max-w-[1000px]">
     
     {/* Highlight 1 - View Role Details */}
