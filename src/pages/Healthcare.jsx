@@ -729,7 +729,7 @@ const Healthcare = () => {
         </div>
       )}
 
-      {open && modalType === "recruiter" && (
+      {open && modalType === "post-job" && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-4 py-6">
           <div className="bg-white rounded-[32px] shadow-xl w-full max-w-[980px] p-6 relative max-h-[90vh] overflow-hidden">
             <button
@@ -1216,7 +1216,7 @@ const Healthcare = () => {
                   items-center
                   overflow-hidden
                   xl:max-w-none
-                  xl:w-[1300px]
+                  xl:w-[1400px]
                   xl:h-[650px]
                   xl:rounded-[70px]
                   xl:p-0
@@ -1321,7 +1321,7 @@ const Healthcare = () => {
                       mt-3
                       px-2
                       xl:px-0
-                      xl:w-[751px]
+                      xl:w-[800px]
                       xl:h-[87px]
                       xl:mt-[20px]
                       xl:ml-[50px]
@@ -1331,7 +1331,7 @@ const Healthcare = () => {
                   </p>
 
                   {/* Divider */}
-                  <div className="w-full max-w-[90%] xl:w-[750px] my-4 xl:my-0 xl:mt-[-10px] xl:ml-[50px] border border-slate-300"></div>
+                  <div className="w-full max-w-[90%] xl:w-[800px] my-4 xl:my-0 xl:mt-[-10px] xl:ml-[50px] border border-slate-300"></div>
 
                   {/* Job Info Bar */}
                   <div
@@ -1410,7 +1410,7 @@ const Healthcare = () => {
                       gap-6
                       mt-6
                       xl:mt-0
-                      xl:w-[725px]
+                      xl:w-[800px]
                       xl:mt-[38px]
                       xl:ml-[50px]
                     "
@@ -1468,7 +1468,7 @@ const Healthcare = () => {
 
                   {/* Highlights Section */}
                  <div className="w-full mt-6 xl:mt-0 xl:mt-[25px] xl:ml-[28px]">
-  <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3 w-full max-w-[900px]">
+  <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 w-full max-w-[1000px]">
     
     {/* Highlight 1 - View Role Details */}
     <button
