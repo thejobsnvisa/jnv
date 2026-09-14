@@ -8,6 +8,7 @@ import d5 from "../assets/Physiotherapist.jpg";
 import d6 from "../assets/General Practitioner (Emergency Skills).jpg";
 import d7 from "../assets/personal care worker.jpg";
 import a1 from "../assets/arrow.png";
+import { MdOutlinePersonSearch } from "react-icons/md";
 import { LuClock3, LuMapPin, LuBriefcase } from "react-icons/lu";
 import { FaRegCheckCircle } from "react-icons/fa";
 import { RiUserSettingsLine } from "react-icons/ri";
@@ -1629,10 +1630,14 @@ const Healthcare = () => {
         duration-200
       "
     >
-      <img
-        src={a1}
-        alt="Employer"
-        className="w-5 h-5 flex-shrink-0 object-contain group-hover:brightness-200"
+       <MdOutlinePersonSearch
+        className="
+          w-5 h-5
+          text-green-900
+          group-hover:text-white
+          flex-shrink-0
+          transition-colors
+        "
       />
       <span
         className="
