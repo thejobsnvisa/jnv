@@ -9,7 +9,7 @@ import d6 from "../assets/General Practitioner (Emergency Skills).jpg";
 import d7 from "../assets/personal care worker.jpg";
 import a1 from "../assets/arrow.png";
 import { MdOutlinePersonSearch } from "react-icons/md";
-import { CiLocationArrow1 } from "react-icons/ci";
+import { RiFileUserLine } from "react-icons/ri";
 import { LuClock3, LuMapPin, LuBriefcase } from "react-icons/lu";
 import { FaRegCheckCircle } from "react-icons/fa";
 import { RiUserSettingsLine } from "react-icons/ri";
@@ -1591,7 +1591,7 @@ const Healthcare = () => {
         duration-200
       "
     >
-        <CiLocationArrow1
+        <RiFileUserLine
         className="
           w-5 h-5
           text-white
